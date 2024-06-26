@@ -1,0 +1,75 @@
+.navigation {
+  padding: toRem(5) 0 toRem(0);
+
+  @include respond-to(md) {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    border: toRem(1) solid rgb(225, 225, 225);
+    margin-top: toRem(5);
+    @include respond-to(md) {
+      display: none;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+
+    @include respond-to(md) {
+      flex-direction: column;
+      gap: toRem(30);
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: toRem(30);
+  }
+
+  &__link {
+    font-size: toRem(14);
+    font-weight: 600;
+    line-height: toRem(24);
+    letter-spacing: 0%;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+
+    @include respond-to(tablet) {
+      font-size: toRem(12);
+    }
+  }
+
+  &__box {
+    display: flex;
+    width: toRem(267);
+    justify-content: flex-end;
+    @include respond-to(md) {
+      display: none;
+    }
+  }
+
+  &__search {
+    width: toRem(40);
+    transition: width 0.4s ease-in-out;
+    background-image: url("../img/search.svg") no-repeat right toRem(10) center;
+    border: toRem(1) solid transparent;
+    padding: toRem(0) toRem(20);
+    border-radius: toRem(10);
+    cursor: pointer;
+
+    &:focus {
+      width: 100%;
+      border: toRem(1) solid rgba(44, 100, 235, 0.15);
+      border-radius: toRem(10);
+    }
+
+    &:nth-child(2) {
+      background-image: url("../img/lang.svg") no-repeat right toRem(10) center;
+    }
+  }
+}

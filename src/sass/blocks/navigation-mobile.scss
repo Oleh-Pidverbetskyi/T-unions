@@ -1,0 +1,66 @@
+.navigation-mobile {
+  display: none;
+  @include respond-to(md) {
+    display: none;
+  }
+}
+
+.navigation-mobile {
+  @include respond-to(md) {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 50%;
+    margin: 0;
+    padding: toRem(20);
+    list-style: none;
+    z-index: 2;
+    transition: all 0.4s;
+    height: 100vh;
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid #dfdfe0;
+    background-color: #ffffff;
+
+    &--active {
+      left: 0;
+    }
+  }
+  @include respond-to(tablet) {
+    width: 60%;
+    padding: toRem(20) toRem(10);
+  }
+}
+
+.navigation-mobile__wrap {
+  align-items: center;
+}
+
+.navigation-mobile__logo {
+  margin: 0 auto;
+}
+
+.navigation-mobile__list {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.navigation__box-mobile {
+  display: flex;
+
+  @include respond-above(md) {
+    display: none;
+  }
+}
+
+.navigation__search-mobile {
+  &:focus {
+    width: 60%;
+    padding-left: toRem(10);
+  }
+
+  @include respond-to(xs) {
+    font-size: 14px;
+  }
+}

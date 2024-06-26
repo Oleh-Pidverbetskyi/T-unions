@@ -1,0 +1,37 @@
+$mediaBreakpoints: (
+  xs: 400px,
+  sm: 600px,
+  tablet: 768px,
+  md: 1024px,
+  xm: 1200px,
+  lg: 1440px,
+  xl: 1920px,
+) !default;
+
+@mixin respond-above($media) {
+  $breakpoint: map-get($mediaBreakpoints, $media);
+
+  @if ($breakpoint) {
+    @media (min-width: ($breakpoint)) {
+      @content;
+    }
+  } @else {
+    @media (min-width: ($media)) {
+      @content;
+    }
+  }
+}
+
+@mixin respond-to($media) {
+  $breakpoint: map-get($mediaBreakpoints, $media);
+
+  @if ($breakpoint) {
+    @media (max-width: ($breakpoint)) {
+      @content;
+    }
+  } @else {
+    @media (max-width: ($media)) {
+      @content;
+    }
+  }
+}

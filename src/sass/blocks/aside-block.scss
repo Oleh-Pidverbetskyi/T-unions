@@ -1,0 +1,322 @@
+.aside__list {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(30);
+  align-items: center;
+}
+
+.aside__card {
+  width: toRem(270);
+  position: relative;
+  padding: toRem(16);
+  border: toRem(1) solid #e1e1e1;
+  border-radius: toRem(10);
+}
+
+.aside__card-ad {
+  position: absolute;
+  top: toRem(9);
+  right: toRem(9);
+}
+
+.aside__card-logo {
+  margin-bottom: toRem(22);
+}
+
+.aside__card-title {
+  font-weight: 700;
+  font-size: toRem(24);
+  line-height: toRem(35);
+  color: #71b219;
+  text-align: center;
+  margin-bottom: toRem(6);
+}
+
+.aside__card-text {
+  line-height: toRem(21.6);
+  text-align: center;
+  margin-bottom: toRem(22);
+}
+
+.aside__card-btn {
+  width: toRem(238); // Assuming 238px to be converted
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans";
+  font-weight: 600;
+  line-height: toRem(24);
+  border-radius: toRem(6);
+  padding: toRem(10) toRem(22);
+  background-color: $big-btn-color;
+  color: #ffffff;
+  border: none;
+  margin: 0 auto;
+  margin-bottom: toRem(6);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.aside__card-risk-slogan {
+  text-align: center;
+}
+
+.aside__card:nth-child(2) .aside__card-title {
+  display: inline-block;
+  font-weight: 600;
+  font-size: toRem(21);
+  line-height: toRem(28.35);
+  color: #000000;
+  text-align: left;
+
+  &::after {
+    content: "";
+    display: block;
+    width: toRem(40);
+    height: toRem(5);
+    background-color: #000000b2;
+    margin-top: toRem(22);
+  }
+}
+.aside__card:nth-child(2) .aside__card-title-word {
+  color: $green-primary-color;
+  display: inline;
+  font-weight: 600;
+  font-size: toRem(21);
+  line-height: toRem(28.35);
+}
+.aside__card:nth-child(2) .aside__card-arrow-logo {
+  display: inline;
+}
+.aside__card:nth-child(2) .aside__card-menu-list {
+  justify-content: space-between;
+}
+.aside__card:nth-child(2) .aside__card-menu-btn {
+  padding: 0;
+  padding-bottom: toRem(5);
+  font-size: toRem(12);
+  line-height: toRem(24);
+}
+
+.aside__card-list {
+  margin-top: toRem(22);
+}
+
+.aside__card-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: toRem(1) solid #fac71e;
+  border-radius: toRem(6);
+  margin-bottom: toRem(6);
+}
+
+.aside__card-list-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: toRem(30);
+  background-color: #fac71e26;
+  padding: toRem(6) toRem(10);
+  color: #000000;
+}
+
+.aside__card-list-pair,
+.aside__card-list-percent,
+.aside__card-list-number {
+  font-weight: 600;
+  font-size: toRem(14);
+  line-height: toRem(25);
+}
+
+.aside__card-list-percent {
+  color: $green-primary-color;
+}
+
+.aside__card-list-link {
+  padding: toRem(6) toRem(10);
+}
+
+.aside__card-list-item:nth-child(2) {
+  border: toRem(1) solid #c0c8d0;
+  border-radius: toRem(6);
+}
+.aside__card-list-item:nth-child(2) .aside__card-list-number {
+  background-color: #c0c8d026;
+}
+.aside__card-list-item:nth-child(2) .aside__card-list-percent {
+  color: $red-primary-color;
+}
+.aside__card-list-item:nth-child(3) {
+  border: toRem(1) solid #fca16e;
+  border-radius: toRem(6);
+}
+.aside__card-list-item:nth-child(3) .aside__card-list-number {
+  background-color: #fca16e26;
+}
+.aside__card:nth-child(3) .aside__card-title {
+  display: inline-block;
+  font-weight: 600;
+  font-size: toRem(21);
+  line-height: toRem(28.35);
+  color: #000000;
+  text-align: left;
+
+  &::after {
+    content: "";
+    display: block;
+    width: toRem(40);
+    height: toRem(5);
+    background-color: #000000b2;
+    margin-top: toRem(22);
+  }
+}
+.aside__card:nth-child(3) .aside__card-title-word {
+  color: $red-primary-color;
+  display: inline;
+  font-weight: 600;
+  font-size: toRem(21);
+  line-height: toRem(28.35);
+}
+.aside__card:nth-child(3) .aside__card-arrow-logo {
+  display: inline;
+}
+.aside__card:nth-child(3) .aside__card-menu-list {
+  justify-content: space-between;
+}
+.aside__card:nth-child(3) .aside__card-menu-btn {
+  padding: 0;
+  padding-bottom: toRem(5);
+  font-size: toRem(12);
+  line-height: toRem(24);
+}
+
+.aside__card-list {
+  margin-top: toRem(22);
+}
+
+.aside__card-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: toRem(1) solid #fac71e;
+  border-radius: toRem(6);
+  margin-bottom: toRem(6);
+}
+
+.aside__card-list-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: toRem(30);
+  background-color: #fac71e26;
+  padding: toRem(6) toRem(10);
+  color: #000000;
+}
+
+.aside__card-list-pair,
+.aside__card-list-percent,
+.aside__card-list-number {
+  font-weight: 600;
+  font-size: toRem(14);
+  line-height: toRem(25);
+}
+
+.aside__card-list-percent {
+  color: $green-primary-color;
+}
+
+.aside__card-list-link {
+  padding: toRem(6) toRem(10);
+}
+
+.aside__card:nth-child(4) {
+  padding: toRem(16) 0;
+}
+.aside__card:nth-child(4) .aside__card-title {
+  font-weight: 600;
+  font-size: toRem(21);
+  line-height: toRem(28.35);
+  color: #000000;
+  text-align: left;
+  padding: 0 toRem(16);
+
+  &::after {
+    content: "";
+    display: block;
+    width: toRem(40);
+    height: toRem(5);
+    background-color: #000000b2;
+    margin-top: toRem(22);
+  }
+}
+
+.aside__card:nth-child(4) .aside__card-menu-list {
+  justify-content: space-between;
+  padding: 0 toRem(16);
+}
+.aside__card:nth-child(4) .aside__card-menu-btn {
+  padding: 0;
+  padding-bottom: toRem(5);
+  font-size: toRem(12);
+  line-height: toRem(24);
+}
+
+.aside-table {
+  width: 100%;
+  margin: toRem(20) auto;
+  border: toRem(1) solid #ddd;
+  border-radius: toRem(8);
+  overflow: hidden;
+  border-collapse: collapse;
+  box-shadow: none;
+}
+.aside-table__title {
+  background-color: #f4f4f4;
+  padding: toRem(10);
+  text-align: left;
+  border-bottom: toRem(1) solid #ddd;
+}
+
+tbody td {
+  padding: toRem(10);
+  border-bottom: toRem(1) solid #ddd;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.strong-buy {
+  color: $green-primary-color;
+  font-weight: 600;
+  font-size: toRem(14);
+  line-height: toRem(18.9);
+}
+
+.sell {
+  color: $red-primary-color;
+  font-weight: 600;
+  font-size: toRem(14);
+  line-height: toRem(18.9);
+}
+
+.aside-table__pair {
+  font-weight: 600;
+  font-size: toRem(14);
+  line-height: toRem(18.9);
+  color: #000000b2;
+}
+
+.aside-table__price {
+  font-weight: 600;
+  font-size: toRem(14);
+  line-height: toRem(18.9);
+}
+
+.aside-table__text {
+  font-size: toRem(12);
+  color: #000000bf;
+  padding: 0 toRem(16);
+  text-align: left;
+}

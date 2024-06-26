@@ -1,0 +1,71 @@
+.prognosis__list {
+  display: flex;
+  align-items: center;
+  gap: toRem(10);
+  margin-bottom: toRem(30);
+
+  @include respond-to(xm) {
+    justify-content: center;
+  }
+  @include respond-to(xm) {
+    flex-wrap: wrap;
+  }
+}
+.prognosis__card {
+  width: toRem(285);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: toRem(10);
+  border: toRem(1) solid #53910040;
+  padding-top: toRem(16);
+
+  @include respond-to(430px) {
+    width: 100%;
+  }
+}
+
+.prognosis__card-title {
+  font-weight: 600;
+  font-size: toRem(18);
+  line-height: toRem(23.4);
+  color: $green-primary-color;
+  border-radius: toRem(9);
+  background-color: #71b21912;
+  padding: toRem(6) toRem(16);
+}
+
+.prognosis__card:nth-last-child(2) {
+  border: toRem(1) solid $red-primary-color;
+}
+.prognosis__card:nth-last-child(1) {
+  border: toRem(1) solid #292e3340;
+}
+.prognosis__card:nth-last-child(2) .prognosis__card-title {
+  color: $red-primary-color;
+  background-color: #cc524912;
+}
+.prognosis__card:nth-last-child(1) .prognosis__card-title {
+  color: #292e33;
+  background-color: #292e3340;
+}
+
+.prognosis__card-text {
+  width: toRem(251);
+  text-align: center;
+  line-height: toRem(26.4);
+  margin-bottom: toRem(16);
+}
+
+.prognosis__card-time {
+  width: 100%;
+  text-align: center;
+  background-color: #f0f1f2;
+  padding: toRem(6) toRem(0);
+  border-bottom-left-radius: toRem(10);
+  border-bottom-right-radius: toRem(10);
+  font-weight: 600;
+  font-size: toRem(18);
+  line-height: toRem(29.7);
+  color: #000000;
+}

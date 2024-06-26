@@ -1,0 +1,35 @@
+.menu::after {
+  content: "";
+  display: block;
+  height: toRem(1);
+  background-color: #dfdfe0;
+  margin-top: toRem(-2);
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: toRem(5);
+}
+
+.menu__btn {
+  font-family: "Open Sans";
+  padding: 0 toRem(16) toRem(10);
+  border: none;
+  background-color: transparent;
+  border-bottom: toRem(3) solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  color: #000000;
+  transition: border-bottom 0.3s, color 0.3s;
+}
+
+.menu__btn:hover {
+  border-bottom: toRem(3) solid $green-primary-color;
+  color: $green-primary-color;
+}
+
+.menu__btn-active {
+  border-bottom: toRem(3) solid $green-primary-color;
+  color: $green-primary-color;
+}

@@ -1,0 +1,14 @@
+"use strict";
+const updateTime = require("./module/updateTime.js");
+const ws = require("./module/ws.js");
+const burgerMenu = require("./module/burgerMenu.js");
+const breadCrumbSlider = require("./module/breadCrumbSlider.js");
+const menuSlider = require("./module/menuSlider.js");
+const animateArrow =require("./module/animateArrow.js");
+const activeLinkMenus =require("./module/activeLinkMenus.js");
+const pairCoinSlider =require("./module/pairCoinSlider.js");
+const mainTable = require("./module/mainTable.js");
+const asideTable = require("./module/asideTable.js");
+const mobilePhoneTableSearch = require("./module/mobilePhoneTableSearch.js");
+const fixIOSelectAtr = require("./module/fixIOSelectAtr.js");
+const graph = require("./module/graph.js");

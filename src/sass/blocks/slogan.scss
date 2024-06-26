@@ -1,0 +1,28 @@
+.slogan {
+  width: 100%;
+  background-color: #f4f7fe;
+  padding: toRem(16);
+  border-radius: toRem(0) toRem(10) toRem(10) toRem(0);
+  border-left: toRem(5) solid #2c64eb;
+  margin-bottom: toRem(30);
+}
+
+.slogan__text {
+  line-height: toRem(28);
+  margin-bottom: toRem(10);
+}
+
+.slogan__link {
+  max-width: toRem(452);
+  display: flex;
+  align-items: center;
+  gap: toRem(6);
+  padding: toRem(6) toRem(16);
+  background-color: rgba(44, 100, 235, 0.07);
+  border-radius: toRem(10);
+  font-weight: 600;
+  line-height: toRem(25);
+  color: $big-btn-color;
+  cursor: pointer;
+  text-decoration: none;
+}

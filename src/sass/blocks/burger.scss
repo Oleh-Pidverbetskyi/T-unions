@@ -1,0 +1,81 @@
+@import "../utils/media.scss";
+@import "../utils/function.scss";
+
+.burger {
+  display: none;
+}
+
+.burger:checked ~ .burger__btn > .burger__btn--off {
+  transform: rotate(45deg);
+}
+.burger:checked ~ .burger__btn > .burger__btn--off::before {
+  top: 0;
+  transform: rotate(0);
+}
+.burger:checked ~ .burger__btn > .burger__btn--off::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+@include respond-to(xm) {
+  .burger__btn {
+    align-items: center;
+    width: toRem(24);
+    height: toRem(24);
+    margin-left: 15px;
+  }
+
+  .burger__btn--off,
+  .burger__btn--off::before,
+  .burger__btn--off::after {
+    display: block;
+    position: absolute;
+    width: toRem(20);
+    height: toRem(2);
+    background-color: #000000;
+    transition-duration: 0.25s;
+  }
+  .burger__btn--off::before {
+    content: "";
+    top: toRem(-7);
+  }
+  .burger__btn--off::after {
+    content: "";
+    top: toRem(7);
+  }
+}
+
+// @include respond-to(tablet) {
+//   .burger__btn {
+//     align-items: center;
+//     width: toRem(20);
+//     height: toRem(20);
+//   }
+
+//   .burger__btn--off,
+//   .burger__btn--off::before,
+//   .burger__btn--off::after {
+//     display: block;
+//     position: absolute;
+//     width: toRem(20);
+//     height: toRem(2);
+//     background-color: #000000;
+//     transition-duration: 0.25s;
+//   }
+//   .burger__btn--off::before {
+//     content: "";
+//     top: toRem(-8);
+//   }
+//   .burger__btn--off::after {
+//     content: "";
+//     top: toRem(8);
+//   }
+// }
+
+.burger__btn--position {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+  cursor: pointer;
+}

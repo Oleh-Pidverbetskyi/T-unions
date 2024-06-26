@@ -1,0 +1,47 @@
+.prediction__text {
+  line-height: toRem(28);
+}
+
+.prediction__table-wrap {
+  @include respond-to(sm) {
+    display: none;
+  }
+}
+
+table {
+  width: 100%;
+  margin: toRem(20) auto;
+  border-collapse: collapse;
+  border: 1px solid #e1e1e1;
+  border-radius: toRem(10);
+  overflow: hidden;
+  box-shadow: 0 0 toRem(10) rgba(0, 0, 0, 0.1);
+}
+th,
+td {
+  border-bottom: toRem(1) solid #e1e1e1;
+  padding: toRem(16);
+}
+th {
+  background-color: #f2f2f2;
+}
+th:first-child {
+  text-align: left;
+}
+th:not(:first-child) {
+  text-align: center;
+}
+td:first-child,
+th:first-child {
+  border-left: none;
+}
+td:last-child,
+th:last-child {
+  border-right: none;
+}
+td {
+  text-align: center;
+}
+td:first-child {
+  text-align: left;
+}

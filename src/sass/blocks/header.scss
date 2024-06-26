@@ -1,0 +1,64 @@
+.header {
+  padding: toRem(16) 0;
+  background-color: #f9f9f9;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: toRem(10);
+  }
+
+  &__slogan {
+    font-size: toRem(20);
+    line-height: toRem(28);
+    font-weight: 700;
+
+    @include respond-to(md) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    @include respond-to(md) {
+      display: none;
+    }
+  }
+
+  &__login {
+    display: flex;
+    align-items: center;
+    gap: toRem(6);
+
+    @include respond-to(md) {
+      display: none;
+    }
+  }
+
+  &__login-btn {
+    font-family: "Open Sans", sans-serif;
+    font-size: toRem(14);
+    line-height: toRem(14);
+    font-weight: 600;
+    width: toRem(151);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: toRem(10) toRem(22);
+    text-transform: uppercase;
+    border: toRem(1) solid rgba(44, 100, 235, 0.15);
+    border-radius: toRem(10);
+    background: rgba(44, 100, 235, 0.07);
+    cursor: pointer;
+
+    @include respond-to(tablet) {
+      font-size: toRem(12);
+    }
+  }
+
+  &__login-btn:nth-child(2) {
+    color: #f9f9f9;
+    background: rgb(44, 100, 235);
+  }
+}

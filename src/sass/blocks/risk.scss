@@ -1,0 +1,17 @@
+.risk {
+  display: flex;
+  align-items: center;
+  gap: toRem(6);
+  width: toRem(150);
+  margin: 0 auto;
+}
+
+.risk-slogan {
+  font-size: toRem(12);
+  line-height: toRem(13.2);
+  color: #000000bf;
+}
+
+.risk-slogan-position {
+  text-align: center;
+}

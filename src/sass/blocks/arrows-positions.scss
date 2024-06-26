@@ -1,0 +1,22 @@
+.arrow-icon-green {
+  position: absolute;
+  top: toRem(-4);
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: toRem(10) solid $green-primary-color;
+  border-top: toRem(4) solid transparent;
+  border-bottom: toRem(4) solid transparent;
+  transition: left 2s ease-in-out;
+}
+.arrow-icon-red {
+  position: absolute;
+  top: toRem(-4);
+  right: 0;
+  width: 0;
+  height: 0;
+  border-right: toRem(10) solid $red-primary-color;
+  border-top: toRem(4) solid transparent;
+  border-bottom: 4px solid transparent;
+  transition: right 2s ease-in-out;
+}

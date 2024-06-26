@@ -1,0 +1,179 @@
+.converter {
+  max-width: toRem(870);
+  padding: toRem(30);
+  border: toRem(1) solid $green-primary-color;
+  border-radius: toRem(10);
+  margin-bottom: toRem(30);
+
+  @include respond-to(1240px) {
+    margin: 0 auto;
+    margin-bottom: toRem(30);
+  }
+
+  @include respond-to(sm) {
+    padding: toRem(16);
+  }
+
+  @include respond-to(xs) {
+    padding: toRem(10);
+  }
+}
+
+.converter__title {
+  font-weight: 600;
+  font-size: toRem(21);
+  line-height: toRem(28.35);
+  text-align: center;
+  margin-bottom: toRem(12);
+}
+
+.converter__wrap {
+  max-width: toRem(810);
+  background-color: #f0f1f2;
+  border: toRem(1) solid #d3d3d4;
+  padding: toRem(16);
+  border-radius: toRem(6);
+  margin-bottom: toRem(30);
+}
+
+.converter__box {
+  max-width: toRem(778);
+  display: flex;
+  align-items: center;
+  gap: toRem(16);
+
+  @include respond-to(850px) {
+    flex-direction: column;
+    position: relative;
+  }
+}
+
+.converter__input-box {
+  width: toRem(357);
+  display: flex;
+  border-radius: toRem(4);
+  border: toRem(1) solid #d3d3d4;
+
+  @include respond-to(450px) {
+    width: toRem(286);
+  }
+
+  @include respond-to(370px) {
+    width: toRem(250);
+  }
+}
+
+.converter__input-box input {
+  border: none;
+}
+
+.converter__input-quantity {
+  width: 80%;
+  padding: toRem(10) toRem(16);
+
+  @include respond-to(450px) {
+    width: 75%;
+  }
+
+  @include respond-to(370px) {
+    width: 70%;
+  }
+}
+
+.converter__input-coin {
+  width: 20%;
+  padding: toRem(10) toRem(16);
+  text-transform: uppercase;
+
+  @include respond-to(450px) {
+    width: 25%;
+  }
+
+  @include respond-to(370px) {
+    width: 30%;
+  }
+}
+
+.converter__btn {
+  width: toRem(40);
+  height: toRem(40);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: toRem(1) solid #d3d3d4;
+  border-radius: toRem(6);
+  background-color: #ffffff;
+  cursor: pointer;
+
+  @include respond-to(850px) {
+    position: absolute;
+    top: toRem(30);
+  }
+}
+
+.converter__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: toRem(10);
+  margin-bottom: toRem(30);
+
+  @include respond-to(md) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.converter__item {
+  width: toRem(380);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: toRem(10);
+  border-bottom: toRem(1) solid #d3d3d4;
+  padding-bottom: toRem(6);
+
+  @include respond-to(450px) {
+    width: 90%;
+  }
+}
+
+.converter__text {
+  font-size: toRem(14);
+  line-height: toRem(18.9);
+  color: #000000;
+}
+
+.converter__price {
+  font-weight: 600;
+  line-height: toRem(21.6);
+  color: #000000;
+}
+
+.converter__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans";
+  font-weight: 600;
+  line-height: toRem(24);
+  width: toRem(370);
+  border-radius: toRem(6);
+  padding: toRem(10) toRem(22);
+  background-color: $big-btn-color;
+  color: #ffffff;
+  border: none;
+  margin: 0 auto;
+  margin-bottom: toRem(6);
+  cursor: pointer;
+
+  @include respond-to(450px) {
+    width: 90%;
+  }
+}
+
+.converter__result {
+  text-align: center;
+  margin-top: toRem(10);
+  height: toRem(10);
+}
